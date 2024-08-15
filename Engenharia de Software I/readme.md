@@ -16,3 +16,20 @@ Within Google, we sometimes say, “Software engineering is programming integrat
 ## Comentário 
 
 O texto diferencia programação de engenharia de software, explicando que a programação cria software, enquanto a engenharia de software abrange o desenvolvimento, modificação e manutenção ao longo do tempo. Em resumo, engenharia de software integra a programação com uma visão de longo prazo.
+
+# Exemplos de trade-offs com requisitos não funcionais
+
+### 1. Desempenho vs. Segurança:
+Desempenho: Um sistema que prioriza desempenho pode utilizar métodos mais rápidos de processamento e menos verificação, como evitar criptografia complexa para melhorar a velocidade de resposta.
+Segurança: Em contraste, um sistema que prioriza segurança pode adicionar camadas de criptografia e autenticação, o que pode impactar a velocidade de processamento e o tempo de resposta do sistema.
+Trade-off: Se você optar por um desempenho mais rápido, pode haver um risco maior de vulnerabilidades. Se optar por segurança robusta, o sistema pode ter um desempenho mais lento.
+
+### 2. Escalabilidade vs. Custo:
+Escalabilidade: Investir em uma arquitetura escalável pode significar o uso de soluções em nuvem que podem crescer conforme a demanda aumenta, permitindo que o sistema suporte um número crescente de usuários e dados.
+Custo: Soluções escaláveis geralmente vêm com custos mais altos devido à infraestrutura e manutenção. Optar por uma solução mais econômica pode significar menos flexibilidade para crescer conforme a demanda.
+Trade-off: Se você escolher uma solução mais barata, pode ter limitações na capacidade de escalar rapidamente. Se optar por uma solução escalável, os custos serão mais elevados.
+
+### 3. Manutenibilidade vs. Performance:
+Manutenibilidade: Projetar um sistema com foco na manutenibilidade pode envolver a adoção de práticas como o uso de código limpo, modularidade e documentação detalhada, o que pode adicionar alguma sobrecarga ao desempenho.
+Performance: Para maximizar a performance, você pode precisar de código otimizado e específico que pode ser mais difícil de manter e entender.
+Trade-off: Focar na performance pode levar a um sistema mais difícil de manter e atualizar. Focar na manutenibilidade pode resultar em algum sacrifício de desempenho.
