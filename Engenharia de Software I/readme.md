@@ -17,19 +17,30 @@ Within Google, we sometimes say, “Software engineering is programming integrat
 
 O texto diferencia programação de engenharia de software, explicando que a programação cria software, enquanto a engenharia de software abrange o desenvolvimento, modificação e manutenção ao longo do tempo. Em resumo, engenharia de software integra a programação com uma visão de longo prazo.
 
-# Exemplos de trade-offs com requisitos não funcionais
+# Aula 3: Exemplos de trade-offs com requisitos não funcionais
 
 ### 1. Desempenho vs. Segurança:
-Desempenho: Um sistema que prioriza desempenho pode utilizar métodos mais rápidos de processamento e menos verificação, como evitar criptografia complexa para melhorar a velocidade de resposta.
-Segurança: Em contraste, um sistema que prioriza segurança pode adicionar camadas de criptografia e autenticação, o que pode impactar a velocidade de processamento e o tempo de resposta do sistema.
-Trade-off: Se você optar por um desempenho mais rápido, pode haver um risco maior de vulnerabilidades. Se optar por segurança robusta, o sistema pode ter um desempenho mais lento.
+**Exemplo**: Em C/C++, você pode optar por usar ponteiros e manipulação direta de memória para otimizar o desempenho. No entanto, isso pode tornar o código vulnerável a ataques como buffer overflows ou corrupção de memória.
 
-### 2. Escalabilidade vs. Custo:
-Escalabilidade: Investir em uma arquitetura escalável pode significar o uso de soluções em nuvem que podem crescer conforme a demanda aumenta, permitindo que o sistema suporte um número crescente de usuários e dados.
-Custo: Soluções escaláveis geralmente vêm com custos mais altos devido à infraestrutura e manutenção. Optar por uma solução mais econômica pode significar menos flexibilidade para crescer conforme a demanda.
-Trade-off: Se você escolher uma solução mais barata, pode ter limitações na capacidade de escalar rapidamente. Se optar por uma solução escalável, os custos serão mais elevados.
+**Trade-off**: Maximizar o desempenho com manipulação direta de memória pode comprometer a segurança, pois você pode introduzir vulnerabilidades que exigem medidas adicionais para mitigação.
 
-### 3. Manutenibilidade vs. Performance:
-Manutenibilidade: Projetar um sistema com foco na manutenibilidade pode envolver a adoção de práticas como o uso de código limpo, modularidade e documentação detalhada, o que pode adicionar alguma sobrecarga ao desempenho.
-Performance: Para maximizar a performance, você pode precisar de código otimizado e específico que pode ser mais difícil de manter e entender.
-Trade-off: Focar na performance pode levar a um sistema mais difícil de manter e atualizar. Focar na manutenibilidade pode resultar em algum sacrifício de desempenho.
+### 2. Manutenibilidade vs. Desempenho:
+**Exemplo**: Em Java, você pode usar técnicas avançadas de otimização como o uso de estruturas de dados complexas ou algoritmos altamente eficientes. Embora essas técnicas possam melhorar o desempenho, elas também podem tornar o código mais complexo e difícil de entender e manter.
+
+**Trade-off**: Priorizar o desempenho pode levar a um código menos legível e mais difícil de manter, o que pode aumentar o custo e o esforço para futuras alterações ou correções.
+
+### 3. Portabilidade vs. Funcionalidade Específica:
+**Exemplo**: Se você está desenvolvendo um aplicativo em Python e deseja usar bibliotecas específicas para aproveitar características únicas de um sistema operacional (como chamadas de sistema específicas), isso pode tornar seu aplicativo menos portátil.
+
+**Trade-off**: Optar por funcionalidades específicas de um sistema operacional pode limitar a capacidade de seu aplicativo de ser executado em diferentes plataformas ou sistemas, impactando a portabilidade.
+
+### 4. Facilidade de Uso vs. Controle Fino:
+**Exemplo**: Em uma linguagem de alto nível como Python, você pode ter abstrações e frameworks que facilitam o desenvolvimento, mas podem abstrair detalhes finos de controle de execução e gerenciamento de recursos. Em contraste, linguagens como C++ oferecem mais controle sobre a memória e o hardware, mas com maior complexidade.
+
+**Trade-off**: Usar abstrações e frameworks para facilitar o desenvolvimento pode limitar o controle fino sobre os recursos do sistema, enquanto o uso de linguagens mais detalhadas pode aumentar a complexidade do desenvolvimento e a curva de aprendizado.
+
+### 5. Velocidade de Desenvolvimento vs. Performance:
+**Exemplo**: Em um projeto desenvolvido em Ruby on Rails, o foco pode ser na velocidade de desenvolvimento e prototipagem rápida, usando a convenção sobre configuração e ferramentas integradas. No entanto, isso pode resultar em uma aplicação que não é tão otimizada em termos de desempenho.
+
+**Trade-off**: Priorizar a velocidade de desenvolvimento e a facilidade de uso das ferramentas pode levar a uma aplicação que não é tão eficiente em termos de desempenho, o que pode ser um problema para aplicativos com alta carga ou requisitos de desempenho crítico.
+
