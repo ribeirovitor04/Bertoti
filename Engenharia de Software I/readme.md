@@ -46,6 +46,8 @@ O texto diferencia programação de engenharia de software, explicando que a pro
 
 # Análise das trade-offs na arquitetura da Netflix
 
+<img src="/assets/img/Netflix Arquitetura.jpeg" height=750>
+
 ### 1. Descentralização vs. Consistência
 **Descentralização**: A Netflix adota uma arquitetura altamente descentralizada, baseada em microservices. Isso permite que diferentes equipes desenvolvam, implantem e escalem suas próprias partes do sistema de forma independente.
 
