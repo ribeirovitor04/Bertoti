@@ -72,3 +72,52 @@ O texto diferencia programação de engenharia de software, explicando que a pro
 **Automatização**: A Netflix utiliza ferramentas e scripts para automatizar muitas operações, incluindo a implantação de serviços e a gestão de falhas. Isso melhora a eficiência e reduz o risco de erro humano.
 
 **Controle Manual**: Embora a automação traga muitos benefícios, pode haver casos em que o controle manual é necessário para resolver problemas complexos ou implementar mudanças específicas. Encontrar o equilíbrio entre automação e controle manual é um desafio constante.
+
+# Aula 4
+
+<div>
+package DiagramaUML;
+
+import java.util.LinkedList;
+
+import java.util.List;
+
+public class Petshop {
+    //* Atributos privados
+    private String endereco;
+    private int telefone;
+    private List<Animal> animais = new LinkedList<Animal>();
+
+    //* Construtor da classe
+    public Petshop(String endereco, int telefone, List<Animal> animais) {
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.animais = animais;
+    }
+
+    //* Métodos para modificar e acessar o endereco
+    public String getEndereco() {
+
+        return endereco;
+    }
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    //* Métodos para modificar e acessar o telefone
+    public int getTelefone() {
+        return telefone;
+    }
+    public void setTelefone (int telefone) {
+        this.telefone = telefone;
+    }
+
+    //* Métodos para modificar e acessar o animal
+    public List<Animal> getAnimal() {
+        return animais;
+    }
+    public void setAnimais (List<Animal> animais) {
+        this.animais = animais;
+    }
+}
+</div>
