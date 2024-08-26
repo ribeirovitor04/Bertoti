@@ -75,7 +75,7 @@ O texto diferencia programação de engenharia de software, explicando que a pro
 
 # Aula 4
 
-<div>
+
 package DiagramaUML;
 
 import java.util.LinkedList;
@@ -83,10 +83,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Petshop {
+    
     //* Atributos privados
-    private String endereco;
-    private int telefone;
-    private List<Animal> animais = new LinkedList<Animal>();
+    private String endereco; 
+    private int telefone; 
+    private List animais = new LinkedList();
 
     //* Construtor da classe
     public Petshop(String endereco, int telefone, List<Animal> animais) {
@@ -120,4 +121,4 @@ public class Petshop {
         this.animais = animais;
     }
 }
-</div>
+
